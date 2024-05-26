@@ -249,51 +249,14 @@ Graph&  Graph::operator+=(const Graph& other) {
 
     bool Graph::operator==(const Graph &other) const
     {
-        // // Compare the sizes of the matrices
-        // if (graph_matrix.size() != other.graph_matrix.size())
-        // {
-        //     return false; // If the sizes are different, the graphs are different
-        // }
-
-        // // Compare the contents of the matrices
-        // for (size_t i = 0; i < graph_matrix.size(); ++i)
-        // {
-        //     for (size_t j = 0; j < graph_matrix[i].size(); ++j)
-        //     {
-        //         if (graph_matrix[i][j] != other.graph_matrix[i][j])
-        //         {
-        //             return false; // If there is a different value between the matrices, the graphs are different
-        //         }
-        //     }
-        // }
-
-        // // If we reach here, all values are equal - the graphs are identical
-        // return true;
+        
+      
         return graph_matrix ==other.graph_matrix;
     }
 
     bool Graph::operator!=(const Graph &other) const
     {
-        // // Compare the sizes of the matrices
-        // if (graph_matrix.size() != other.graph_matrix.size())
-        // {
-        //     return true; // If the sizes are different, the graphs are different
-        // }
-
-        // // Compare the contents of the matrices
-        // for (size_t i = 0; i < graph_matrix.size(); ++i)
-        // {
-        //     for (size_t j = 0; j < graph_matrix[i].size(); ++j)
-        //     {
-        //         if (graph_matrix[i][j] != other.graph_matrix[i][j])
-        //         {
-        //             return true; // If there is a different value between the matrices, the graphs are different
-        //         }
-        //     }
-        // }
-
-        // // If we reach here, all values are equal - the graphs are identical
-        // return false;
+       
         return graph_matrix!=other.graph_matrix;
     }
 
